@@ -18,18 +18,37 @@ void	test_ft_strcmp(void)
 	char	s1[1000];
 	char	s2[1000];
 
-	printf(BLUE"______TESTING <ft_strcmp>______\n");
+	printf(BLUE"______TESTING <ft_strcmp>______\n"RESET);
 	printf(CYAN"[case 1]"RESET" \n첫 번째 문자열을 입력하세요: \n");
 	scanf("%s", s1);
 	printf("두 번째 문자열을 입력하세요: \n");
 	scanf("%s", s2);
 	printf("원본함수: %d\n 나의함수: %d\n", strcmp(s1, s2), ft_strcmp(s1, s2));
+}
 
+void	test_ft_strcpy(void)
+{
+	char s1[1000];
+	char s2[1000];
+	char *d;
+	char *d2;
+
+	printf(BLUE"______TESTING <ft_strcpy>______\n"RESET);
+	printf(CYAN"[case 1]"RESET" \n원본 문자열을 입력하세요: \n");
+	scanf("%s", s1);
+	printf("복사할 문자열을 입력하세요: ");
+	scanf("%s", s2);
+	d = strdup(s1);
+	d2 = strdup(s2);
+	printf("원본함수: %s\n 나의함수: %s\n", strcpy(s1, s2), ft_strcpy(d, d2));
+	free(d);
+	free(d2);
 }
 
 int		main(void)
 {
-	test_ft_strlen();
-	test_ft_strcmp();
+	// test_ft_strlen();
+	// test_ft_strcmp();
+	test_ft_strcpy();
 	return (1);
 }	

@@ -20,13 +20,10 @@ diff:
 
 same:
 	cmp al, 0
-	je 	null
+	je 	end:
 	inc rcx
 	jmp compare
 
-null:
+end:
 	mov rax, 0
 	ret
-
-
-    
