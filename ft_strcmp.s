@@ -20,7 +20,7 @@ diff:
 
 same:
 	cmp al, 0
-	je 	end:
+	je 	end
 	inc rcx
 	jmp compare
 

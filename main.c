@@ -45,10 +45,22 @@ void	test_ft_strcpy(void)
 	free(d2);
 }
 
+void	test_ft_write(void)
+{
+	char buff[1024];
+
+	printf(BLUE"______TESTING <ft_wrtie>______\n"RESET);
+	printf(CYAN"[case 1]"RESET" \n문자열을 입력하세요: \n");
+	scanf("%s", buff);
+	ft_write(1, buff, ft_strlen(buff));
+}
+
+
 int		main(void)
 {
 	// test_ft_strlen();
 	// test_ft_strcmp();
-	test_ft_strcpy();
+	// test_ft_strcpy();
+	test_ft_write();
 	return (1);
 }	
