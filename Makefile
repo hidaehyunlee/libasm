@@ -6,7 +6,7 @@
 #    By: daelee <daelee@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/27 00:22:43 by daelee            #+#    #+#              #
-#    Updated: 2020/11/27 13:30:23 by daelee           ###   ########.fr        #
+#    Updated: 2020/11/30 14:38:04 by daelee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,9 +16,8 @@ SRCS	= ft_strlen.s \
 		  ft_strcpy.s \
 		  ft_strcmp.s \
 		  ft_write.s \
-		#   ft_strdup.s \
-		  
-		#   ft_read.s \
+		  ft_strdup.s \
+		  ft_read.s \
 
 OBJS	= $(SRCS:.s=.o)
 
