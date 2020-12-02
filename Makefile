@@ -6,7 +6,7 @@
 #    By: daelee <daelee@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/27 00:22:43 by daelee            #+#    #+#              #
-#    Updated: 2020/11/30 14:38:04 by daelee           ###   ########.fr        #
+#    Updated: 2020/12/02 16:07:16 by daelee           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,6 @@ OBJS	= $(SRCS:.s=.o)
 
 TEST	= test
 
-TXT		= example.txt
-
 %.o		: %.s
 	nasm -f macho64 $<
 
@@ -37,7 +35,7 @@ clean	:
 	rm -rf $(OBJS)
 
 fclean	: clean
-	rm -rf $(NAME) $(TEST) $(TXT) $(NAME)
+	rm -rf $(NAME) $(TEST) $(NAME)
 
 re		: fclean all
 
