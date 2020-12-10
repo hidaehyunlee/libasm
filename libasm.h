@@ -6,7 +6,7 @@
 /*   By: daelee <daelee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 17:11:08 by daelee            #+#    #+#             */
-/*   Updated: 2020/11/27 19:55:11 by daelee           ###   ########.fr       */
+/*   Updated: 2020/12/10 11:54:57 by daelee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlen(const char *s);
 int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(const char *dst, const char *src);
 char	*ft_strdup(const char *s1);
-int		ft_read(int fd, void *buff, size_t nbyte);
-int		ft_write(int fd, void *buff, size_t nbyte);
+ssize_t ft_read(int fd, void *buff, size_t nbyte);
+ssize_t ft_write(int fd, void *buff, size_t nbyte);
 
 #endif
