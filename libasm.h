@@ -6,12 +6,15 @@
 /*   By: daelee <daelee@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 17:11:08 by daelee            #+#    #+#             */
-/*   Updated: 2020/12/10 12:26:37 by daelee           ###   ########.fr       */
+/*   Updated: 2020/12/10 12:51:46 by daelee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBASM_H
 # define LIBASM_H
+# define BLUE "\x1b[34m"
+# define CYAN "\x1b[36m"
+# define RESET "\x1b[0m"
 
 # include <stdio.h>
 # include <string.h>
